@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pac-icon {
+  background-image: url('./assets/icon-adress.svg')!important;
+  background-size: 20px;
+  width: 20px;
+}
+
+.pac-item {
+  padding: 10px;
+  border-top: 1px solid #eee !important;
+}
+
+.pac-container span {
+  font-family: OpenSans-Regular;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #273d52;
+}

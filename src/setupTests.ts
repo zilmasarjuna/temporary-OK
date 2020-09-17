@@ -4,7 +4,11 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect';
 
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
 import 'jest-styled-components';
+
+configure({ adapter: new Adapter() });

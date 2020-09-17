@@ -2,11 +2,15 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
+import LogoOttopay from 'app/assets/icon-logo-ottopay.png';
+
 import { Container, Row } from '../../Grid';
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+  background-color: #d8d8d8;
 
   @media (max-width: 960px) {
     display: none;
@@ -41,14 +45,16 @@ const Header = () => {
     <Wrapper>
       <Container>
         <Row>
-          <Logo>Logo</Logo>
+          <Logo>
+            <img src={LogoOttopay} alt="logo-ottopay" />
+          </Logo>
           <NavigationWrapper>
             <Nav>
               <NavItem>
-                <Link to="">Bergabung Jadi Mitra</Link>
+                <Link to="/app">Bergabung Jadi Mitra</Link>
               </NavItem>
               <NavItem>
-                <Link to="">Blog</Link>
+                <Link to="/app">Blog</Link>
               </NavItem>
             </Nav>
           </NavigationWrapper>
