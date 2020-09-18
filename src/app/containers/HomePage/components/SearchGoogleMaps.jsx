@@ -77,15 +77,14 @@ const WrapperBoxInput = styled.div`
 `
 
 
-const SearchGoogleMaps = withScriptjs(() => {
+const SearchGoogleMaps = withScriptjs(({ history }) => {
   let refs = {}
   const onSearchBoxMounted = ref => {
     refs.searchBox = ref
   }
 
   const onPlacesChanged = () => {
-    window.location = '/store-list'
-    console.log('places', refs.searchBox.getPlaces()[0].geometry.location.lat())
+    history.push('/store-list')
   }
 
   return (

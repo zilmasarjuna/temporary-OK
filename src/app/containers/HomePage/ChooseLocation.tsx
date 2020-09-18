@@ -16,12 +16,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const ChooseLocation = () => {
+const ChooseLocation = ({ history }) => {
   return (
     <Wrapper>
       <Card>
         <Logo />
         <SearchGoogleMaps
+          history={history}
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7PkvwaFR1ci9-466iCFhejK8GzCV6hvw&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `400px` }} />}

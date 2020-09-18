@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   padding: 20px 0;
   border-bottom: 1px solid #eee;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
-  background-color: #d8d8d8;
 
   @media (max-width: 960px) {
     display: none;
