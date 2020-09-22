@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Logo /> in Card Search Location has a image 1`] = `
+exports[`<Logo /> in Card Merchant has a image 1`] = `
 "<Logo__ImgLogo>
   <img src=\\"icon-logo-ottopay.png\\" alt=\\"img-ottopay\\" />
 </Logo__ImgLogo>"
