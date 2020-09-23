@@ -22,14 +22,15 @@ const WrapDetail = styled.div`
   flex: 0 0 81%;
 
   h5 {
-    font-family: OpenSans-Regular;
-    font-size: 1rem;
+    font-family: OpenSans-SemiBold;
+    font-size: 1.12rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: #273d52;
+    margin: 0;
   }
 
   p {

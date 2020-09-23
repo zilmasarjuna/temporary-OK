@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+
 import StoreIcon from 'app/assets/icon-bg-merchant.svg';
 
 import AddItem from './AddItem';
@@ -62,7 +63,7 @@ const Price = styled.div`
   max-width: 70%;
 `;
 
-const ItemProduct = () => {
+const ItemProduct = ({ detail, addProduct }) => {
   return (
     <Wrapper>
       <WrapImg>
@@ -72,7 +73,7 @@ const ItemProduct = () => {
         <h5>Indomie Mie Goreng 65 gr (Paket @10 bks)</h5>
         <WrapperPrice>
           <Price>Rp. 20.000</Price>
-          <AddItem count={1} />
+          <AddItem detail={detail} addProduct={addProduct} />
         </WrapperPrice>
       </WrapDetail>
     </Wrapper>

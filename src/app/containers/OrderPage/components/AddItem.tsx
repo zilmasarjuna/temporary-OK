@@ -60,15 +60,15 @@ const InfoCount = styled.div`
 }
 `;
 
-const AddItem = ({ count }) => {
-  if (count) {
+const AddItem = ({ detail, addProduct }) => {
+  if (detail.count) {
     return (
       <Wrapper>
         <WrapperAddRemove>
-          <ButtonIcon>
+          <ButtonIcon onClick={() => addProduct(detail.id)}>
             <img src={AddIcon} alt="min" />
           </ButtonIcon>
-          <InfoCount>23</InfoCount>
+          <InfoCount>{detail.count}</InfoCount>
           <ButtonIcon>
             <img src={RemoveIcon} alt="plus" />
           </ButtonIcon>
@@ -79,7 +79,7 @@ const AddItem = ({ count }) => {
 
   return (
     <Wrapper>
-      <ButtonAdd>Tambah</ButtonAdd>
+      <ButtonAdd onClick={() => addProduct(detail.id)}>Tambah</ButtonAdd>
     </Wrapper>
   );
 };
